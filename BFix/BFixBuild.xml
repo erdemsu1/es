@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project BFix">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="C:/Users/erdem.su/Desktop/bfix.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="com.bmd.bfix.BFix"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="C:/shoppingmall/workspace/BFix/bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Download/quickfixj-1.5.3-bin/quickfixj/quickfixj-msg-fix50-1.5.3.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Download/quickfixj-1.5.3-bin/quickfixj/quickfixj-msg-fixt11-1.5.3.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Download/quickfixj-1.5.3-bin/quickfixj/lib/mina-core-1.1.7.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Download/quickfixj-1.5.3-bin/quickfixj/lib/mina-core-1.1.7-sources.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Download/quickfixj-1.5.3-bin/quickfixj/lib/slf4j-api-1.6.3.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Download/quickfixj-1.5.3-bin/quickfixj/lib/slf4j-jdk14-1.6.3.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/QuickFixLib/quickfixj-core-1.5.3.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/QuickFixLib/lambdaj-2.4-with-dependencies.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/usb 8gb yedek/shoppingmall/workspace/Neus/WebContent/WEB-INF/lib/ojdbc6.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/shoppingmall/workspace/BFix/forms-1.3.0.jar"/>
+        </jar>
+    </target>
+</project>
