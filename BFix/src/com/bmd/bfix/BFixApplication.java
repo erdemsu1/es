@@ -90,8 +90,8 @@ public class BFixApplication implements Application {
 	private DefaultMessageFactory messageFactory = new DefaultMessageFactory();
 	private BFixOrderTableModel orderTableModel = null;
 	private BFixQuoteOrderTableModel quoteOrderTableModel = null;
-	
 	private BFixExecutionTableModel bFixExecutionTableModel = null;
+	
 	private ObservableLogon observableLogon = new ObservableLogon();
 	private ObservableOrder observableOrder = new ObservableOrder();
 	private ObservableBFixLogon observableBFixLogon = new ObservableBFixLogon();
